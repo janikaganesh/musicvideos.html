@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Stylesheet.css">
+        <title> My Webpage </title>
+        <link rel="shortcut icon" href="C:\Users\Janix\Downloads\Favicon.png" type="image/x-icon">
+        <style>
+            body{
+                box-sizing: border-box;
+                margin: auto;
+                padding: 10px;
+            }
+            form{
+                background-color: aliceblue;
+                color: darkblue;
+                width: 1000px;
+                height: 400px;
+                box-shadow: 4px 10px aliceblue;
+                border-radius: 5px;
+                padding: 10px;
+                text-align: center;
+                font-family: monotype corsiva;
+            }
+        </style>
+    </head>
+    <script>
+        function validate(){
+            var password = document.getElementById("txtpassword").value;
+            var confirmpassword = document.getElementById("txtconfirmpassword").value;
+            if (password != confirmpassword)
+            {
+                alert("password does not match. Please re enter password or choose a different one");
+                return false;
+            }
+            return true;
+        }
+        function myfunction()
+        {
+            document.getElementById("demo").innerHTML="Form Succesfully submitted. You are now a member!";
+        }
+    </script>
+    <body>
+        <nav>
+            <a href="C:\Users\Janix\Janika_Website_Project.html"> Home </a>
+            <a href="C:\Users\Janix\RecommendedPage.html"> Recommended </a>
+            <a href="C:\Users\Janix\MyMusicPage.html"> My Stuff </a>
+            <a href="C:\Users\Janix\DailyTrivia.html"> Daily Trivia </a>
+        </nav>
+        <div style="text-align: right; background-color: yellow; color: black;">
+            <a href="C:\Users\Janix\BecomeAMemberPage.html"> Become a Member </a>
+        </div>
+        <h1> Become a Member </h1>
+        <section>
+            <center><form id="demo">
+                <fieldset>
+                    <h3> To become a member you will have to fill out this form. </h3>
+                    Full Name: <br>
+                    <input type="text" required> <br>
+                    Date of Birth: <br>
+                    <input type="date" required> <br>
+                    Email ID: <br>
+                    <input type="text" required> <br>
+                    Create a password: <br>
+                    <input type="password" id="txtpassword"> <br>
+                    Confirm Password: <br>
+                    <input type="password" id="txtconfirmpassword"> <br>
+                    <button type="button" id="password" onclick="return validate()"> Validate </button> <br> <br>
+                    Gender: <br>
+                    <input type="radio" name="gender"> Male <br>
+                    <input type="radio" name="gender"> Female <br>
+                    <button type="submit" onclick="myfunction()"> SIGN UP </button>
+                </fieldset>
+            </form></center>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Stylesheet.css">
+        <title> My Webpage </title>
+        <link rel="shortcut icon" href="C:\Users\Janix\Downloads\Favicon.png" type="image/x-icon">
+        <style>
+            body{
+                background: url("https://i.pinimg.com/736x/c4/2f/df/c42fdf55d9387b275449f39a5743f073.jpg");
+                background-size: 50%;
+                text-align: center;
+            }
+            form{
+                color: darkcyan;
+                width: 800px;
+                height: 640px;
+                background-color: aliceblue;
+                margin: auto;
+                border: 20px dotted pink;
+                font-size: 25px;
+            }
+            iframe{
+                width: 100%;
+                height: 33%;
+            }
+            h1{
+                background-color: teal;
+                color: white;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <script> 
+            function myfunction(){
+                document.getElementById('upload').innerHTML="Uploaded!";
+            }
+        </script>
+        <nav>
+            <a href="C:\Users\Janix\Janika_Website_Project.html"> Home </a>
+            <a href="C:\Users\Janix\RecommendedPage.html"> Recommended </a>
+            <a href="C:\Users\Janix\MyMusicPage.html"> My Stuff </a>
+            <a href="C:\Users\Janix\DailyTrivia.html"> Daily Trivia </a>
+        </nav>
+        <div style="text-align: right; background-color: yellow; color: black;">
+            <a href="C:\Users\Janix\BecomeAMemberPage.html"> Become a Member </a>
+        </div> <br>
+        <form>
+            <h1> Uploading Videos Form </h1>
+                Name: <br>
+                <input type="text"> <br> <br>
+                Would you like your video to be public or private? <br>
+                <input type="radio" name="display"> Private (only I can see/hear) <br>
+                <input type="radio" name="display"> Public (anyone can see/hear) <br> <br>
+                Video/Audio size: <br>
+                <input type="text"> <br> <br>
+                Video/Audio file: <br>
+                <input type="text"> <br> <br>
+                <button id="upload" onclick="myfunction()" type="button"> UPLOAD </button>
+                <ul style="text-align: left;">
+                    <li> The upload must be under 5 MB </li>
+                    <li> If it is not your orginial video, then confirm that you have copyrights </li>
+                </ul>
+        </form>
+    </body>
+</html>

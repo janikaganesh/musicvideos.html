@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Stylesheet.css">
+        <title> My Webpage </title>
+        <link rel="shortcut icon" href="C:\Users\Janix\Downloads\Favicon.png" type="image/x-icon">
+        <style>
+            button{
+                width: 50%;
+                height: 75px;
+                font-size: 25px;
+                color: white;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                transition: 0.3s;
+                border: 3px dashed black;
+            }
+            #zoom{
+                text-align: center;
+                font-size: 25px;
+                animation-name: zoom;
+                animation-iteration-count: 1;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes zoom{
+                from{font-size: 25px;}
+                to{font-size: 40px;}
+            }
+            #aqua{
+                background-color: aquamarine;
+            }
+            #teal{
+                background-color: teal;
+            }
+            button:hover{
+                opacity: 0.7;
+            }
+            div.question{
+                width: 1348px;
+                height: 400px;
+                animation-name: change;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                background-color: black;
+                color: white;
+            }
+            @keyframes change{
+                0%{background-color: red;}
+                20%{background-color: orange;}
+                40%{background-color: yellow;}
+                60%{background-color: green;}
+                80%{background-color: blue;}
+                100%{background-color: purple;}
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="C:\Users\Janix\Janika_Website_Project.html"> Home </a>
+            <a href="C:\Users\Janix\RecommendedPage.html"> Recommended </a>
+            <a href="C:\Users\Janix\MyMusicPage.html"> My Stuff </a>
+            <a href="C:\Users\Janix\DailyTrivia.html"> Daily Trivia </a>
+        </nav>
+        <div style="text-align: right; background-color: yellow; color: black;">
+            <a href="C:\Users\Janix\BecomeAMemberPage.html"> Become a Member </a>
+        </div> <br>
+        <div class="question">
+            <br> <br> <br> <br>
+            <h2 id="zoom"> What are the 4 parts in any choir? </h2>
+            <center> <a href="correct.html"> <button id="aqua"> Soprano, Alto, Tenor, Bass </button> </a>
+            <a href="incorrect.html"> <button id="teal"> Soprano, Mezzo-soprano, Alto, Tenor </button> </a> </center>
+        </div>
+    </body>
+</html>
