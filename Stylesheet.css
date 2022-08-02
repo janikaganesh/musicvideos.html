@@ -1,0 +1,132 @@
+body{
+    background-image: url('https://previews.123rf.com/images/inventoris/inventoris1911/inventoris191100011/137562566-music-themed-freehand-drawings-seamless-pattern-hand-drawn-music-elements-doodles-design-for-wallpap.jpg');
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: yellow;
+    color: black;
+    margin: 10px;
+    text-align: center;
+}
+a{
+    padding: 10px;
+    color: blue;
+}
+a:hover{
+    color: red;
+}
+h1{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+header{
+    background-color: gainsboro;
+    color: black;
+}
+form{
+    background-color: darkolivegreen;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+        position: relative;
+        width: 50%;
+}
+.flex-item2{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("https://cdn.wallpapersafari.com/15/98/I0tmB4.jpg");
+    overflow: hidden;
+    height: 100%;
+    width: 0;
+    transition: .5 ease;
+    background-size: 125%;
+}
+.overlay2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("https://media.istockphoto.com/vectors/music-background-vector-id460149761?k=20&m=460149761&s=612x612&w=0&h=dY3dKRx82zZwqHye_IwoyHXgJKR4SW_f5bZmQnyuZ5A=");
+    overflow: hidden;
+    height: 100%;
+    width: 0;
+    transition: .5 ease;
+    background-size: 125%;
+}
+.container:hover .overlay{
+    width: 100%
+}
+.container:hover .overlay2{
+    width: 100%
+}
+.text{
+    color: black;
+    background-color: yellow;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50% -50%);
+    transform: translate(-50% -50%);
+    -webkit-transform: translate (-50%, -50%);
+    white-space: no-wrap;
+}
+.text2{
+    color: darkblue;
+    background-color: orange;;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50% -50%);
+    transform: translate(-50% -50%);
+    -webkit-transform: translate (-50%, -50%);
+    white-space: no-wrap;
+}
+.container2{
+    position: relative;
+    width: 500px;
+    height: 280px;
+}
+.flex-item1{
+    width: 1000px;
+    height: 410px;
+}
+.container3{
+    display: flex;
+    background-color: gray;
+}
+.column{
+    margin: 15px;
+    float: center;
+}
+.column iframe{
+    margin-top: 10px;
+    padding: 30px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.videocontainer .buttoncontainer{
+    position: absolute;
+    margin-left: 30px;
+    bottom: 0px;
+}
+.videocontainer{
+    position: relative;
+}
+.searchbar{
+    width: 1330px;
+    height: 20px;
+    border-style: 2px solid black;
+}
